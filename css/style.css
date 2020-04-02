@@ -33,9 +33,45 @@ header a{
 
 header{
     background: 
-    linear-gradient(rgba(84,93,220,.7),
-    rgba(96,171,245,.7)),
+    linear-gradient(rgba(84,93,220,.8),
+    rgba(96,171,245,.8)),
     url(../img/fondo-home.jpg); /* Imagen de fondo del Header*/
     height: 100vh; /* Ocupa todo el viewport*/
     background-size: cover; /* Tamaño de la imagen*/
+}
+#contenedor-titulo-flex{
+    display: flex; /* Atributo flexible al padre para que .contenedor-titulo se centre */
+    justify-content: center;
+    margin: 18vh auto; /* Arriba y abajo le damos 18vh y a los lados auto para que se centre*/
+}
+
+h1{
+    font-size: 60px; 
+    color: #fff;
+    margin: 0;
+}
+
+h2{
+    font-size: 25px; 
+    color: #fff;
+}
+
+.contenedor-titulo{
+    text-align: center; /* Centrar los dos h y el boton*/
+}
+.contenedor-titulo a{
+    font-size: 14px;
+    color: #fff;
+    background: #5cb8ff;
+    padding: 14px 24px;
+    display: inline-block; /* Para que tome propiedades tambien de block para darle un tamaño definido*/
+    width: 128px;
+}
+
+p.logo{
+    color: #fff;
+}
+
+nav ul li a{
+    color: #fff;
 }
