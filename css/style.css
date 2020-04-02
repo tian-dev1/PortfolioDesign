@@ -3,7 +3,30 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
+/* Etiqueta padre .contenedor*/
 header .contenedor {
-    display: flex;
-    justify-content: space-between;
+    display: flex; /* Le damos a la etiqueta padre el atributo flexible*/
+    justify-content: space-between; /* Para alinear p a la izquierda y nav a la derecha*/
+}
+
+/* Etiqueta padre .lista-menu*/
+
+header .lista-menu{
+    display: flex; /* Atributo flexible al padre para que li se ordenen horizontal*/
+
+}
+
+header .lista-menu li{
+    list-style: none; /* Quitamos puntos de los items*/
+    margin-right: 15px;
+}
+
+header a{
+    text-decoration: none; /* Quitamos subrayado*/
+}
+
+.contenedor{
+    max-width: 1280px; /* Tamañano máximo medida standar*/
+    width: 90%; 
+    margin: auto; /* Centrar contenido en el 90% de ancho*/
 }
