@@ -30,3 +30,12 @@ header a{
     width: 90%; 
     margin: auto; /* Centrar contenido en el 90% de ancho*/
 }
+
+header{
+    background: 
+    linear-gradient(rgba(84,93,220,.7),
+    rgba(96,171,245,.7)),
+    url(../img/fondo-home.jpg); /* Imagen de fondo del Header*/
+    height: 100vh; /* Ocupa todo el viewport*/
+    background-size: cover; /* Tamaño de la imagen*/
+}
