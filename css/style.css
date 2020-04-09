@@ -22,7 +22,7 @@ header .lista-menu li{
 }
 
 header a{
-    text-decoration: none; /* Quitamos subrayado*/
+    text-decoration: none; /* Quitamos subrayado en a de nav*/
 }
 
 .contenedor{
@@ -59,13 +59,14 @@ h2{
 .contenedor-titulo{
     text-align: center; /* Centrar los dos h y el boton*/
 }
-.contenedor-titulo a{
+.contenedor-titulo a, #sobre-mi a{ /*Botones de header y sobre mi*/
     font-size: 14px;
     color: #fff;
     background: #5cb8ff;
     padding: 14px 24px;
     display: inline-block; /* Para que tome propiedades tambien de block para darle un tamaño definido*/
     width: 128px;
+    text-decoration: none; /* Quitamos subrayado*/
 }
 
 p.logo{
@@ -74,4 +75,21 @@ p.logo{
 
 nav ul li a{
     color: #fff;
+}
+
+
+/* **************SECCION DE SOBRE MI********* */
+h3{
+    text-align: center;
+    font-size: 55px;
+    font-weight: normal; /* Peso de la fuente*/
+}
+
+.contenedor-sobremi{
+    display: flex; /* Atributo flexible al padre para que .texto .computadoras se alinien uno al lado del otro */
+    justify-content: space-around; /* ESpacio entre la seccion de la imagen y texto */
+} 
+
+#sobre-mi .texto{
+    width: 42%;
 }
