@@ -78,7 +78,7 @@ nav ul li a{
 }
 
 
-/* **************SECCION DE SOBRE MI********* */
+/* **********************************SECCION DE SOBRE MI********************************** */
 h3{
     text-align: center;
     font-size: 55px;
@@ -93,3 +93,66 @@ h3{
 #sobre-mi .texto{
     width: 42%;
 }
+
+/* **********************************SECCION DE SERVICIOS********************************** */
+.contenedor-servicios {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    color: #fff;
+}
+
+.servicio{
+    width: 24%;
+    padding: 34px 30px 30px 30px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+
+    position: relative;
+}
+
+.servicio h4{
+    font-size: 30px; /* Tamaño y margen del titulo del servicio*/
+    margin: 0;
+}
+
+.servicio p{
+    margin-bottom: 20px;
+    height: 194px;
+}
+
+.contenedor-servicios .violeta{
+    background-image: linear-gradient(to top, #5055df, #6d68f3); /* to top para que el gradiente valla de abajo hacia arriba*/
+    box-shadow: 0 12px 30px 0 rgba(80, 85, 223, .37); /* SOmbrea de la caje */
+}
+
+.contenedor-servicios .celeste{
+    background-image: linear-gradient(to top, #40a8f9, #5cb8ff);
+    box-shadow: 0 12px 30px 0 rgba(86, 163, 222, .3);
+
+    /*  
+    box-shadow: Ancho 0  altura 12  radio de la sombra 30 radio de propagación 0 color en RGBA
+    */
+}
+
+.ondas{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.icono{
+    float: right;
+}
+
+
+/* SECCION DE MIS TRABAJOS*/
+
+button.owl-prev, button.owl-next {
+    font-size: 40px !important;
+}
+
+span{
+    color: #71bcfa;
+}
+

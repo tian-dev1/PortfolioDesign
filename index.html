@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="Owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="Owl/owl.theme.default.min.css">
     <title>Portfolio Design</title>
 </head>
 <body>
     <header>
+        <!-- menu inicial -->
         <div class="menu">
             <div class="contenedor">
                 <p class="logo">CRISTIAN AREVALO PERDOMO</p>
@@ -24,6 +27,7 @@
                 </nav>
             </div>
         </div>
+        <!-- contenedor de titulo -->
         <div class="contenedor" id="contenedor-titulo-flex">
             <div class="contenedor-titulo">
                 <h1>Cristian Arevalo Perdomo</h1>
@@ -34,6 +38,7 @@
     </header>
 
     <main>
+        <!-- section sobre mi  -->
         <section id="sobre-mi">
             <div class="contenedor">
                 <h3>Sobre mi</h3>
@@ -50,6 +55,115 @@
                 </div>
             </div>
         </section>
+
+        <!-- section de servicios -->
+        <section id="servicios">
+            <div class="contenedor">
+                <h3>Servicios</h3>
+                <div class="contenedor-servicios">
+                    <div class="servicio violeta">
+                        <h4>Diseño Web</h4>
+                        <p>
+                            Páginas web atractivas y funcionales con el objetivo de satisfacer todas tus expectativas. La importancia del diseño es fundamental 
+                            para tener éxito y atraer a tus visitantes. También lo es la velocidad de carga del sitio web, deben ser rápidos para que el visitante tenga la mejor experiencia
+                        </p>
+                        <img class="icono" src="./img/monitor.png" alt="">
+                        <img class="ondas" src="./img/waves.png" alt="">
+                    </div>
+                    <div class="servicio celeste">
+                        <h4>Responsive Design</h4>
+                        <p>
+                            Hoy en día las páginas web se ven en multitud de dispositivos como tablets, celulares, libros electrónicos, notebooks, PCs, etc. La tecnología móvil
+                            es el presente y el futuro. Para eso es importante y me aseguro de que tu sitio web sea compatible con todos los tamaños de pantalla de esta época moderna
+                        </p>
+                        <img class="icono" src="./img/monitor.png" alt="">
+                        <img class="ondas" src="./img/waves.png" alt="">
+                    </div>
+                    <div class="servicio violeta">
+                        <h4>SEO</h4>
+                        <p>
+                            Al crear sitios web, tengo muy en cuenta la optimización de motores de búsqueda (SEO). Llevo a cabo prácticas de SEO estándar en cada página del sitio web, 
+                            lo que permite que tu sitio tenga una clasificación más alta en los resultados de Google y asi generar mas tráfico a la web
+                        </p>
+                        <img class="icono" src="./img/monitor.png" alt="">
+                        <img class="ondas" src="./img/waves.png" alt="">
+                    </div>
+                    <div class="servicio celeste">
+                        <h4>Autoadministrable</h4>
+                        <p>
+                            Es importante que puedas administrar tu página web vos mismo, desde cualquier lugar y en cualquier momento. Desarrollo sistemas de gestión de contenido 
+                            que te permiten ver los datos de tu página web y editar el contenido que quieras, lo que te permite mantenerte actualizado    
+                        </p>
+                        <img class="icono" src="./img/monitor.png" alt="">
+                        <img class="ondas" src="./img/waves.png" alt="">
+                    </div>
+                    <div class="servicio violeta">
+                        <h4>Mantenimiento</h4>
+                        <p>
+                            Podés contactarme si necesitas actualizar tu página web, agregar nuevas secciones o cualquier cambio que necesites. 
+                            Esto es perfecto para los sitios web de pequeñas empresas, donde no se necesita un diseñador de páginas web a tiempo completo, sino solo en distintas ocasiones
+                        </p>
+                        <img class="icono" src="./img/monitor.png" alt="">
+                        <img class="ondas" src="./img/waves.png" alt="">
+                    </div>
+                    <div class="servicio celeste">
+                        <h4>Marketing Digital</h4>
+                        <p>
+                            Utilizo las herramientas mas importantes como Google Adwords y Google Analytics, para que tu negocio aparezca en los resultados de búsqueda de Google 
+                            justo cuando alguien te necesita y analizar como los usuarios interactúan con tu página web
+                        </p>
+                        <img class="icono" src="./img/monitor.png" alt="">
+                        <img class="ondas" src="./img/waves.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- section de mis trabajos -->
+        <section id="mis-trabajos">
+            <div class="contenedor">
+                <div class="owl-carousel owl-theme">
+                    <div class="item"><img src="" alt=""></div>
+                    <div class="item"><img src="" alt=""></div>
+                    <div class="item"><img src="" alt=""></div>
+                    <div class="item"><img src="" alt=""></div>
+                    <div class="item"><img src="" alt=""></div>
+                    <div class="item"><img src="" alt=""></div>
+                    <div class="item"><img src="" alt=""></div>
+                    <div class="item"><img src="" alt=""></div>
+                    <div class="item"><img src="" alt=""></div>
+                    <div class="item"><img src="" alt=""></div>
+                    <div class="item"><img src="" alt=""></div>
+                    <div class="item"><img src="" alt=""></div>
+                </div>
+            </div>
+        </section>
+
     </main>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+			integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous">
+    </script>
+    <script src="Owl/owl.carousel.min.js"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    dots:false,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+})
+    </script>
 </body>
 </html>
