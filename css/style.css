@@ -156,3 +156,38 @@ span{
     color: #71bcfa;
 }
 
+
+/*Estilo añadido por mi*/
+.name-project{
+    text-align: center;
+}
+
+
+/* SECCION DE ¿POR QUE TRABAJAR CONMIGO?*/
+.contenedor-trabajar{
+    display: flex;
+    flex-wrap: wrap; /* Si ve que los elementos ocupan mucho espacio automaticamente  los baja*/
+    justify-content: space-around;
+}
+
+#por-que-trabajar .item{
+    width: 28%;
+    text-align: center;
+}
+
+#por-que-trabajar ul li{
+    list-style: none;
+}
+
+/*Obtenemos directamente la hijo número dos del elemento li  (Titulo)*/
+#por-que-trabajar ul li:nth-child(2){
+    font-weight: bold;
+    font-size: 19px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+/*Obtenemos directamente la hijo número dos del elemento li (Parrafo) */
+#por-que-trabajar ul li:nth-child(3){
+    line-height: 30px;
+}
