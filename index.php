@@ -252,15 +252,24 @@
 
         <!-- section de contactenos-->
         <section id="contacto">
+        <?php
+      if(@$_GET['i']=='ok') { // QUIERE DECIR QUE EL FORMULARIO SE ENVIO CORRECTAMENTE ?>
+
+      <h3>La consulta se envio correctamente. Pronto nos contactaremos contigo.</h3>
+
+      <?php
+      } else{
+      ?>
             <div class="contenedor">
                 <h3>Contacto</h3>
-                <form action="enviar-formulario.php" method="post" enctype="multipart/form-data">
-                    <input type="text" placeholder="Nombre" name="nombre">
-                    <input type="email" placeholder="Email" name="email">
-                    <textarea name="mensaje" placeholder="Mensaje"></textarea>
+                <form action="envio-formulario.php" method="post" enctype="multipart/form-data">
+                    <input type="text" placeholder="Nombre" name="nombre" required>
+                    <input type="email" placeholder="Email" name="email" required>
+                    <textarea name="mensaje" placeholder="Mensaje" required></textarea>
                     <input type="submit" value="Enviar Mensaje">
                 
                 </form>
+                <?php } ?>
             </div>
         </section>
 
