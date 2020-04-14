@@ -59,7 +59,8 @@ h2{
 .contenedor-titulo{
     text-align: center; /* Centrar los dos h y el boton*/
 }
-.contenedor-titulo a, #sobre-mi a, #blog a, #que-esperas a{ /*Botones de header y sobre mi*/
+.contenedor-titulo a, #sobre-mi a, #blog a, #que-esperas a,
+#contacto input[type="submit"]{ /*Botones de header y sobre mi*/
     font-size: 14px;
     color: #fff;
     background: #5cb8ff;
@@ -247,4 +248,38 @@ span{
 #que-esperas h3{
     font-size: 24px;
     color: #fff;
+}
+
+/* SECCION DE CONTACTO*/
+
+#contacto form{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+}
+
+input[type="text"], input[type="email"]{
+    width: 48%;
+    margin-bottom: 15px;
+    padding: 18px 0;
+    border: 0;
+    border-bottom: 1px solid #5cb8ff;
+    font-size: 17px;
+}
+
+textarea {
+    padding: 18px 0;
+    border: 0;
+    border-bottom: 1px solid #5cb8ff;  
+    font-size: 17px;
+    margin-bottom: 40px;
+    width: 100%; 
+}
+
+
+#contacto input[type="submit"]{
+    width: 160px;
+    margin: auto;
 }
