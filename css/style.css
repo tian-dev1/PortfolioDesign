@@ -260,7 +260,7 @@ span{
     margin: auto;
 }
 
-input[type="text"], input[type="email"]{
+input[type="text"], input[type="email"]{ /* Este estilo toma todos los input de tipo text y email*/
     width: 48%;
     margin-bottom: 15px;
     padding: 18px 0;
@@ -282,4 +282,51 @@ textarea {
 #contacto input[type="submit"]{
     width: 160px;
     margin: auto;
+}
+
+.contacto-info{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+
+}
+
+
+.contacto-info img{
+    width: 28px;
+    vertical-align: middle; /* Alinear de manera vertical imagen a mismo nivel de texto*/
+    margin-right: 10px;
+}
+
+
+/* SECCION DE PIE DE PÁGINA*/
+footer{
+    background: #2f2f2f;
+    padding: 40px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer .contenedor{
+    display: flex;
+    justify-content: center;
+    flex-direction: column; /* Organizar elementos en forma de columna*/
+}
+
+footer img{
+    margin: 0 40px;
+    /* Estilos para animación*/
+    transform: rotate(0);
+    transition: 0.4s;
+}
+/* Animación*/
+footer img:hover{
+    transform: rotate(360deg);
+    transition: 0.4s;
+}
+
+
+footer p{
+    color: #fff;
+    margin-top: 40px;
 }
