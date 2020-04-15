@@ -10,19 +10,21 @@
     <title>Portfolio Design</title>
 </head>
 <body>
+    <a id="whatsapp" href="#"><img src="./img/whatsapp.png" alt="whatsapp"></a>
     <header>
         <!-- menu inicial -->
         <div class="menu">
             <div class="contenedor">
                 <p class="logo">CRISTIAN AREVALO PERDOMO</p>
+                <img class="menu-icon" src="img/indice.png" alt="menu-icon" width="40px">
                 <nav>
                     <ul class="lista-menu">
-                        <li><a href="">Sobre mi</a></li>
-                        <li><a href="">Servicios</a></li>
-                        <li><a href="">Mis trabajos</a></li>
-                        <li><a href="">¿Por que trabajar conmigo?</a></li>
-                        <li><a href="">Blog</a></li>
-                        <li><a href="">Contacto</a></li>
+                        <li><a href="#sobre-mi">Sobre mi</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#mis-trabajos">Mis trabajos</a></li>
+                        <li><a href="#por-que-trabajar">¿Por que trabajar conmigo?</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
                     </ul>
                 </nav>
             </div>
@@ -318,13 +320,42 @@
             items:1
         },
         600:{
-            items:3
+            items:2
         },
         1000:{
             items:4
         }
     }
 })
+    </script>
+    <script>
+        $(document).ready(function(){
+            $(window).scroll(function(){
+                scroll = $(window).scrollTop();
+                if(scroll > 100){
+                    $('.menu').css({"position":"fixed"});
+                    $('.menu').css({"width":"100%"});
+                    $('.menu').css({"top":"0"});
+                    $('.menu').css({"background-color":"#fff"});
+                    $('.menu a').css({"color":"#000"});
+                    $('.logo').css({"color":"#000"});
+                    $('.menu').css({"box-shadow":"rgba(0, 0, 0, 0.22) 6px 1px 1px"});
+                    $('.menu').css({"z-index":"100"});
+                }else{
+                    $('.menu').css({"position":"relative"});
+                    $('.menu').css({"background-color":"transparent"});
+                    $('.menu').css({"box-shadow":"0 0 0"});
+                    $('.menu a').css({"color":"#fff"});
+                    $('.logo').css({"color":"#fff"});
+                }
+            })
+
+            $('.menu-icon').click(function(){
+                $('header nav').slideToggle();
+                /* slideToggle es el junte de slideDown slideUp para aparecer y desaparecer el menu*/
+            })
+
+        })
     </script>
 </body>
 </html>
